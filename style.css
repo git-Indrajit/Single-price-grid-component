@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  background-color: hsl(204, 43%, 93%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 60rem;
+
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  border-radius: 0.438rem;
+  background-color: #fff;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "a a" "b c";
+  overflow: hidden;
+  margin: 2rem 1rem;
+}
+
+.box {
+  padding: 2.5rem;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.625rem;
+  padding-bottom: 1.25rem;
+}
+
+h3 {
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 0.75rem;
+}
+
+.join p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.4;
+}
+.join {
+  grid-area: a;
+}
+
+.sub {
+  grid-area: b;
+  background-color: hsl(179, 62%, 43%);
+}
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25rem;
+  padding-bottom: 0.938rem;
+}
+
+h5 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.625rem;
+}
+
+h5 span.price {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-right: 0.625rem;
+}
+
+h5 span {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+
+.sub p {
+  color: hsl(204, 43%, 93%);
+}
+
+.sub a {
+  display: block;
+  text-align: center;
+  background-color: hsl(71, 73%, 54%);
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-family: 800;
+  padding: 0.75rem 0;
+  border-radius: 0.25rem;
+  margin-top: 1.875rem;
+}
+.why {
+  grid-area: c;
+  background-color: hsl(179, 62%, 50%);
+}
+
+.why ul {
+  list-style: none;
+}
+
+.why li {
+  color: hsl(204, 43%, 93%);
+  padding-bottom: 0.25rem;
+}
+
+@media screen and (max-width:26.563rem) {
+    .wrapper{
+        grid-template-columns: 100%;
+        grid-template-areas: "a" "b" "c";
+    }
+
+    .box{
+        padding: 1.875rem;
+    }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
